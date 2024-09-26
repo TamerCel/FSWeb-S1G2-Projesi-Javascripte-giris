@@ -45,7 +45,7 @@ Aşağıdakileri yap:
 
 /*
 Görev 1d - Çarpma
- 
+ asdasdasdasd
 Aşağıdakileri yaparak carpma isimli fonksiyonu tamamla:   
    1. 2 argüman alsın(a ve b olarak tanımlayabilirsin)
    2. a ve b'yi çarpıp, sonucu dönsün

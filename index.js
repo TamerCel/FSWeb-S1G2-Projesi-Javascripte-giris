@@ -52,8 +52,9 @@ Aşağıdakileri yaparak carpma isimli fonksiyonu tamamla:
    3. console.log(carpma(7,4)) ile yazdığın fonsiyonu test edin. Console'da sonucu 28 olarak görmelisin.
 */
 
-function carpma(/*buraya kodunu yazabilirsin*/) {
-  /*buraya kodunu yazabilirsin*/
+function carpma(a = 7 , b = 4) {
+  return (a * b);
+  
 }
 
 /* Görev 2 : Köpeğin Yaşı */
@@ -65,8 +66,9 @@ Aşağıdakileri yap:
  3. Hesaplanan köpeğin yaşını dönün.
  */
 
-function kopeginYasi(/*buraya kodunu yazabilirsin*/) {
-  /*buraya kodunu yazabilirsin*/
+function kopeginYasi(humanAgetoDogAge) {
+  let kopekYas = (humanAgetoDogAge * 7);
+  return kopekYas ;
 }
 
 /* Görev 3 */
@@ -84,7 +86,19 @@ OYUNUN KURALLARI: Makas Kağıdı yener| Kağıt Taşı yener | Taş Makas'ı ye
 */
 
 function oyun(oyuncu, bilgisayar) {
-  /*buraya kodunu yazabilirsin*/
+  if(oyuncu === bilgisayar){
+    return "Beraberlik"
+  }
+  else if (
+    (oyuncu === "Taş" &&  bilgisayar==="Kağıt")||
+    (oyuncu === "Kağıt" && bilgisayar === "Makas") ||
+    (oyuncu === "Makas" && bilgisayar === "Taş") ) {
+      return "Kaybettin"
+    }
+    else{
+      "Kazandın"
+    }
+  
 }
 
 // Şimdi Taş, Kağıt, Makas oyununu bilgisayara karşı oynayalım!
